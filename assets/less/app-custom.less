@@ -1,3 +1,98 @@
 @import "bootstrap/overrides/variables.less";
 @import "../../bower_components/bootstrap/less/mixins.less";
 /* Write here your custom Less stylesheet */
+
+h1,
+h2,
+.btn-primary {
+  font-family: "Fjalla One", @font-family-base;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+a {
+  font-weight: 500;
+}
+
+section {
+  margin: 4em 0;
+}
+
+.btn-xl {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large * 2; @line-height-large * 1.4; @btn-border-radius-large * 1.4);
+}
+
+// Blockquotes
+blockquote {
+  padding: (@line-height-computed / 2) @line-height-computed;
+  margin: 0 0 @line-height-computed;
+  font-size: @blockquote-font-size;
+  border-left: none;
+
+  p {
+    margin-top: 0.5em;
+  }
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  // Context: https://github.com/twbs/bootstrap/issues/11660
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: @line-height-base;
+    color: @blockquote-small-color;
+
+    &:before {
+      content: none; // em dash, nbsp
+    }
+  }
+}
+
+// Opposite alignment of blockquote
+//
+// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: none;
+  border-left: 0;
+  text-align: right;
+
+  // Account for citation
+  footer,
+  small,
+  .small {
+    &:before { content: ''; }
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.testimonials-container {
+  border: 2px solid @gray-darker;
+
+  h2 {
+    text-align: center;
+    margin-top: -0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: @custom-white;
+  }
+}

@@ -9,6 +9,8 @@
 
     <title>Octohire me!</title>
 
+    <link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
@@ -32,89 +34,229 @@
 
   </head>
 
-  <body>
+  <body class="container">
 
-  <h1>Hey GitHub, you think you should hire me. Why is that?</h1>
-  <h2>Or maybe not, but you're still reading. Dont' stop just yet.</h2>
+  <!-- TODO:
+      * top cosmetic border
+      * alternate color sections
+      * with borders and cosmetic shadows on borders
+  -->
 
-  <p>
-    My name is William Ghelfi, nice to meet you. <a href="mailto:william@williamghelfi.com">You should hire me</a>.
+  <h1 class="margin-top-lg margin-bottom-none">Hey GitHub, you think you should hire me. Why is that?</h1>
+  <p class="lead">Or maybe not, but you're still reading. Don't stop just yet.</p>
+
+  <section class="row">
+    <article class="col-md-9 col-md-push-3">
+      <p>
+        My name is William Ghelfi, nice to meet you. <a href="#get-in-touch">You should hire me</a>.
+      </p>
+
+      <p>
+        I'm an <a href="#why-eclectic">eclectic</a> Web Developer with 15+ years work experience in software development.<br />
+        I love creating things. My <a href="#why-learner">current tools of the trade</a> are: pen & paper, Balsamiq Mockups, HTML & CSS, AngularJS.
+      </p>
+
+      <p>
+        My ideal work routine starts with continuous research, analyzing the UX of everything I stumble upon: from a parking meter to GitHub’s home page.<br />
+        After the research comes the paper, and a low-fidelity mockup.
+      </p>
+
+      <p>
+        The mockup is then shared, feedback is quickly collected, <a href="#why-unique-voice">processed</a>, and merged into the design.
+      </p>
+
+      <p>
+        Finally, the funniest part: implementation!<br />
+        Give me Sublime Text and a Gruntfile, and let me do my thing.
+      </p>
+    </article>
+    <aside class="col-md-3 col-md-pull-9">
+      <figure class="text-center">
+        <img src="assets/images/jedi-me.jpg" width="260" height="260" alt="William Ghelfi" class="img-circle img-responsive" />
+      </figure>
+    </aside>
+  </section>
+
+  <p class="text-center">
+    I know: <a href="#portfolio">you want to see a portfolio of sorts</a>. And that's ok; as it happens, I've got one!
   </p>
 
-  <p>
-    I'm an [eclectic](#why-eclectic) Web Developer with 15+ years work experience in software development.<br />
-    I love creating things. My [current tools of the trade](#why-learner) are: pen & paper, Balsamiq Mockups, HTML & CSS, AngularJS.
-  </p>
+  <!-- TODO: spice some up this section -->
+  <section class="row">
+    <h2 class="col-md-12">Here's some more about me, though</h2>
 
-  <p>
-    My ideal work routine starts with constant research, analyzing the UX of everything I stumble upon: from a parking meter to GitHub’s home page.<br />
-    After the research comes the paper, and a low-fidelity mockup.
-  </p>
+    <article id="why-eclectic" class="col-md-4">
+      <h3>Eclectic.</h3>
+      <p>
+        I'm that guy who can talk to DevOps, share some tricks, get some insights; who then listens to a back-end dev and <em>actually understands what they're saying</em>.<br />
+        Who then again gets back to have a conversation with others in the UX team, and finally comes up with a design that just nails it.
+      </p>
+      <p>
+        You need that guy. You need me.
+      </p>
+    </article>
+    <article id="why-learner" class="col-md-4">
+      <h3>Born, growing up.</h3>
+      <p>
+        It's my motto. I am the continous learner: I learn, therefore I live. Today, I'm having a very good time with Angular. Tomorrow, maybe I'll dig into React.<br />
+        Or I'll go back learning how to build my own REST back ends with Rails from where I left the first time.
+      </p>
+      <p>
+        I have to learn, just like a shark has to roam. You need someone like me.
+      </p>
+    </article>
+    <article id="why-unique-voice" class="col-md-4">
+      <h3>My own voice.</h3>
+      <p>
+        I listen, I observe. But I speak with my own voice.<br />
+        With my designs - ok, with just anything really – I like to research, try, get feedback, fail if it comes to that, own my failure, take responsibility, and do better the next time around.
+      </p>
+      <p>
+        I won't comply, I won't conform just out of the fear of failure. You need that.
+      </p>
+    </article>
+  </section>
 
-  <p>
-    The mockup is then shared, feedback is quickly collected, [processed](#why-strong-voice), and merged into the design.
-  </p>
+  <section>
+    <article class="testimonials-container">
+      <h2>Don't take my word for it</h2>
 
-  <p>
-    Finally, the funniest part: implementation!<br />
-    Give me Sublime Text and a Gruntfile, and let me do my thing.
-  </p>
+      <blockquote class="row">
+        <figure class="col-md-2 text-right">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAKOAAAAJGVkYjZhYTY0LTBhYzktNDAzMC1iMjc5LTAwOGU4Y2Y0OTg2Yw.jpg" class="img-circle" />
+        </figure>
+        <p class="col-md-10">
+          I'm always impressed by his technical skills, by the attention to details and the love he pours into everything he does. William would be an asset to any team, everywhere.
+          <small>Stefano Puddu – Analyst Programmer, Avanade</small>
+        </p>
+      </blockquote>
 
-  <p>
-    I know: [you want to see a portfolio of sorts](#portfolio). And that's ok; as it happens, I've got one!
-  </p>
+      <blockquote class="row blockquote-reverse">
+        <figure class="col-md-2 col-md-push-10 text-left">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAANAAAAJDg0ZTJkMzQxLTBhMjEtNGZmMS04ZTdlLWUxZGEzYWFiNzY4MQ.jpg" class="img-circle" />
+        </figure>
+        <p class="col-md-10 col-md-pull-2">
+          Brilliant, skilled, focused and impressive 360° worker. Personally, I think he might be the final form of the CTO evolution.
+          <small>Valerio Mulas – System Engineer, TSC Consulting</small>
+        </p>
+      </blockquote>
 
-  <h2>Here's some more about me, though.</h2>
+      <blockquote class="row">
+        <figure class="col-md-2 text-right">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/1/000/278/15f/3979056.jpg" class="img-circle" />
+        </figure>
+        <p class="col-md-10">
+          He is creative and proactive, always in the process of learning something new or going in-depth on a known topic.
+          <small>Simone Loru - Analyst Programmer, Avanade</small>
+        </p>
+      </blockquote>
 
-  <ul>
-    <li>
-      <strong>Eclectic.</strong> I'm that guy who can talk to DevOps, share some tricks, get some insights; who then listens to a back end dev and *actually understands what they're saying*; who then again gets back to have a conversation with others in the UX team, and finally comes up with a design that just nails it.<br />
-      You need that guy. You need me.
-    </li>
-    <li>
-      <strong>Born, growing up.</strong> It's my motto. I am the continous learner: I learn, therefore I live. Today, I'm having a very good time with Angular. Tomorrow, maybe I'll dig into React. Or I'll go back learning how to build my own REST back ends with Rails from where I left the first time.<br />
-      I have to learn, just like a shark has to roam. You need someone like me.
-    </li>
-    <li>
-      <strong>I have my own voice.</strong> I listen, I observe. But I speak with my own voice. With my designs - ok, with just anything really – I like to research, try, get feedback, fail if it comes to that, own my failure, take responsibility, and do better the next time around.<br />
-      I won't comply, I won't conform just out of the fear of failure. You need that.
-    </li>
-  </ul>
+      <blockquote class="row blockquote-reverse">
+        <figure class="col-md-2 col-md-push-10 text-left">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/4/005/05f/184/110cc68.jpg" class="img-circle" />
+        </figure>
+        <p class="col-md-10 col-md-pull-2">
+          Working with William is always a pleasure because of his great creativity and humor. He is someone who looks farther than the others.
+          <small>Andrea Dessì – Interaction Designer, Inpeco</small>
+        </p>
+      </blockquote>
 
-  <h2>Don't take my word for it</h2>
+      <blockquote class="sr-only">
+        <p>
+          I wish GitHub would just hire him. My head will explode if I hear him say how great GitHub is just once more.
+        </p>
+        <small>Daniela Nieddu – Wife, Home</small>
+      </blockquote>
 
-  <blockquote>
-    <p>William would be an asset to any team, everywhere.</p>
-    <small>Stefano Puddu – Analyst Programmer, Avanade</small>
-  </blockquote>
-
-  <blockquote>
-    <p>Brilliant, skilled, focused and impressive 360° worker. Personally, I think he might be the final form of the CTO evolution.</p>
-    <small>Valerio Mulas – System Engineer, TSC Consulting</small>
-  </blockquote>
-
-  <blockquote>
-    <p>Working with William is always a pleasure because of his great creativity and humor. He is someone who looks farther than the others.</p>
-    <small>Andrea Dessì – Interaction Designer, Inpeco</small>
-  </blockquote>
-
-  <blockquote>
-    <p>He is creative and proactive, always in the process of learning something new or going in-depth on a known topic.</p>
-    <small>Simone Loru - Programmer, Avanade</small>
-  </blockquote>
+    </article>
+  </section>
 
   <hr />
 
-  <p><em>So, GitHub, are you ready to [hire me](mailto:william@williamghelfi.com)?</em></p>
+  <p class="text-center">
+    If I already have you, just <a href="mailto:william@williamghelfi.com"><span class="fa fa-envelope-o"></span>&#32;drop me a line</a>.
+  </p>
 
   <hr />
 
-  <h2>Portfolio</h2>
+  <section class="row">
+    <h2 id="portfolio" class="col-md-12">Portfolio</h2>
 
-    * bootstrap-css-utils
-    * ngTrumbitta
-    * bootstrap in practice
-    * interesting blog posts
+    <!-- TODO: add "go" button at hover like softfobia -->
+
+    <article class="col-md-6">
+      <div class="thumbnail">
+        <a href="http://trumbitta.github.io/bootstrap-css-utils/">
+          <img src="assets/images/keep-calm.png" alt="Keep calm and a class" />
+        </a>
+        <div class="caption">
+          <h3>
+            Bootstrap CSS utils
+          </h3>
+          <p>A Bower component with some utility CSS classes for Bootstrap</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-6">
+      <div class="thumbnail">
+        <a href="https://github.com/ngTrumbitta">
+          <img src="assets/images/ngtrumbitta.png" alt="Output example of the Yeoman generator." />
+        </a>
+        <div class="caption">
+          <h3>
+            ngTrumbitta
+          </h3>
+          <p>A collection of opinionated Angular modules and whatnot, made with <span class="fa fa-heart"><span class="sr-only">love</span></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-6">
+      <div class="thumbnail">
+        <a href="http://www.williamghelfi.com/bootstrap-in-practice/">
+          <img src="assets/images/bootstrap-in-practice.png" alt=" " />
+        </a>
+        <div class="caption">
+          <h3>
+            Bootstrap In Practice
+          </h3>
+          <p>An ebook about Bootstrap 3 for complete beginners</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-6">
+      <div class="thumbnail">
+        <a href="http://www.williamghelfi.com/">
+          <img src="assets/images/blog.jpg" alt=" " />
+        </a>
+        <div class="caption">
+          <h3>
+            Born, growing up
+          </h3>
+          <p>A blog, where I write about UX, life, and Monty Brewster</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <hr />
+
+  <section id="get-in-touch" class="text-center row">
+    <p>
+      That's it. This website is a love letter for you, GitHub.<br />
+      And if you're interested
+    </p>
+
+    <p class="col-md-6 col-md-offset-3">
+      <!-- TODO: make this botton 3D with active animation -->
+      <a href="mailto:william@williamghelfi.com" class="btn btn-primary btn-xl btn-block">
+        Get in touch&#32;
+        <span class="fa fa-long-arrow-right"></span>
+      </a>
+    </p>
+  </section>
 
   </body>
 </html>
