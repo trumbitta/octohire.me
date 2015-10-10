@@ -1,0 +1,21 @@
+{
+  "name": "octohire.me",
+  "version": "0.0.1",
+  "authors": [
+    "William Ghelfi <william@williamghelfi.com>"
+  ],
+  "description": "A love letter to GitHub",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "fontawesome": "4.3.0",
+    "bootstrap-css-utils": "^0.1.3"
+  },
+  "devDependencies": {
+  }
+}
