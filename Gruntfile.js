@@ -66,12 +66,6 @@ module.exports = function(grunt) {
         src: '<%= pkg.appPath %>/index.html',
         dest: '<%= pkg.buildPathDev %>/index.html'
       },
-      dev_glyphicons: {
-        expand: true,
-        cwd: 'bower_components/bootstrap',
-        src: 'fonts/**',
-        dest: '<%= pkg.buildPathDev %>/'
-      },
       dev_images: {
         expand: true,
         cwd: '<%= pkg.appPath %>/assets',
@@ -107,6 +101,13 @@ module.exports = function(grunt) {
         cwd: '<%= pkg.appPath %>/bower_components/fontawesome',
         src: 'fonts/**',
         dest: '<%= pkg.distPath %>/'
+      }
+    },
+
+    concat: {
+      options: {
+        // define a string to put between each file in the concatenated output
+        separator: ';'
       }
     },
 
@@ -162,7 +163,7 @@ module.exports = function(grunt) {
       },
       options: {
         flow: {
-          steps: { css: ['concat', 'cssmin'] },
+          steps: { js: ['concat', 'uglifyjs'], css: ['concat', 'cssmin'] },
           post: {
             css: [{
               name: 'concat',
@@ -198,7 +199,6 @@ module.exports = function(grunt) {
     'customize-bootstrap:app',
     'less',
     'copy:dev_index',
-    'copy:dev_glyphicons',
     'copy:dev_images'
   ]);
 
@@ -207,6 +207,7 @@ module.exports = function(grunt) {
     'build',
     'copy:dist_prepare',
     'useminPrepare',
+    'concat:generated',
     'cssmin:generated',
     'filerev',
     'copy:dist_update_html',
