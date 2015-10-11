@@ -94,7 +94,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: '<%= pkg.buildPathDev %>',
         src: 'images/**',
-        dest: '<%= pkg.distPath %>/'
+        dest: '<%= pkg.distPath %>/assets/'
       },
       dist_update_fontawesome: {
         expand: true,
