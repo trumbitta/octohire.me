@@ -1,6 +1,5 @@
 @import "bootstrap/overrides/variables.less";
 @import "../../bower_components/bootstrap/less/mixins.less";
-/* Write here your custom Less stylesheet */
 
 h1,
 h2,
@@ -11,6 +10,7 @@ h2,
 }
 
 h2 {
+  margin-top: 0;
   margin-bottom: 1em;
 }
 
@@ -19,12 +19,46 @@ a {
 }
 
 section {
-  margin: 4em 0;
+  padding: 4em 0;
+}
+
+footer {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.cosmetic-strip {
+  height: 1em;
+  background-color: #fff;
+  border-bottom: 2px solid @gray-lighter;
+}
+
+.section-light {
+  background-color: #fff;
+  border-top: 1px solid @gray-lighter;
+  border-bottom: 1px solid @gray-lighter;
+}
+
+.testimonials-container {
+  border: 2px solid @gray-darker;
+
+  h2 {
+    text-align: center;
+    margin-top: -0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: @custom-white-darker;
+  }
 }
 
 .btn-xl {
   // line-height: ensure even-numbered height of button next to large input
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large * 2; @line-height-large * 1.4; @btn-border-radius-large * 1.4);
+}
+
+.thumbnail {
+  background-color: #fff;
 }
 
 // Blockquotes
@@ -81,18 +115,5 @@ blockquote.pull-right {
     &:after {
       content: none;
     }
-  }
-}
-
-.testimonials-container {
-  border: 2px solid @gray-darker;
-
-  h2 {
-    text-align: center;
-    margin-top: -0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    background-color: @custom-white;
   }
 }
