@@ -1,5 +1,6 @@
 @import "bootstrap/overrides/variables.less";
 @import "../../bower_components/bootstrap/less/mixins.less";
+@import "davidwalsh-css-flip.less";
 
 h1,
 h2,
@@ -52,6 +53,41 @@ footer {
   }
 }
 
+#more-about-me {
+
+  & article {
+    font-size: @font-size-base;
+    .transition(font-size .25s ease-in);
+
+    .wane {
+      opacity: 1;
+      .transition(opacity .1s ease-in);
+    }
+  }
+
+  & article:hover {
+    font-size: @font-size-large;
+  }
+
+  & article:hover .wane {
+    .opacity(0);
+    .text-hide();
+  }
+
+}
+
+#intro {
+
+  &:hover .back {
+    transform: rotateY(0deg);
+  }
+
+  &:hover .front {
+    transform: rotateY(180deg);
+  }
+
+}
+
 .btn-xl {
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large * 2; @line-height-large * 1.4; @btn-border-radius-large * 1.4);
 
@@ -61,6 +97,14 @@ footer {
                     -4px -4px 4px @custom-white-darker,
                     -4px 4px 4px @custom-white-darker,
                     4px -4px 4px @custom-white-darker;
+}
+
+.img-circle {
+  border: 2px solid @custom-white-darker;
+  box-shadow: 4px 4px 4px @custom-white,
+              -4px -4px 4px @custom-white,
+              -4px 4px 4px @custom-white,
+              4px -4px 4px @custom-white;
 }
 
 .thumbnail {
