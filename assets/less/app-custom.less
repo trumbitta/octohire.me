@@ -1,6 +1,5 @@
 @import "bootstrap/overrides/variables.less";
 @import "../../bower_components/bootstrap/less/mixins.less";
-@import "davidwalsh-css-flip.less";
 
 h1,
 h2,
@@ -51,41 +50,6 @@ footer {
     width: 60%;
     background-color: @custom-white-darker;
   }
-}
-
-#more-about-me {
-
-  & article {
-    font-size: @font-size-base;
-    .transition(font-size .25s ease-in);
-
-    .wane {
-      opacity: 1;
-      .transition(opacity .1s ease-in);
-    }
-  }
-
-  & article:hover {
-    font-size: @font-size-large;
-  }
-
-  & article:hover .wane {
-    .opacity(0);
-    .text-hide();
-  }
-
-}
-
-#intro {
-
-  &:hover .back {
-    transform: rotateY(0deg);
-  }
-
-  &:hover .front {
-    transform: rotateY(180deg);
-  }
-
 }
 
 .img-circle {
